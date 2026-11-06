@@ -108,7 +108,7 @@ class _CreatePostViewState extends State<_CreatePostView> {
             buildWhen: (prev, curr) => prev.users != curr.users,
             builder: (context, postsState) {
               return DropdownButtonFormField<int>(
-                value: _userId,
+                initialValue: _userId,
                 decoration: const InputDecoration(
                   labelText: 'Автор',
                   border: OutlineInputBorder(),
